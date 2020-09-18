@@ -1,0 +1,76 @@
+{
+	"main.qml":
+	{
+		"loginWelcomLabel_Id":
+		{
+			"Persian":"خوش آمدید",
+			"English":"wellcom back"
+		},
+		"loginTitleLabel_Id":
+		{
+			"Persian":"ورود به حساب کاربری",
+			"English":"Login Your Account"
+		},
+		"loginUsernameLabel_Id":
+		{
+			"Persian":"نام کاربری",
+			"English":"Username"
+		},
+		"loginPasswordLabel_Id":
+		{
+			"Persian":"رمز عبور",
+			"English":"Password"
+		},
+		"rectbuttonLabel_Id":
+		{
+			"Persian":"ورود",
+			"English":"Login"
+		},
+		"loginCreatAccountLabel_Id":
+		{
+			"Persian":"ایجاد حساب جدید",
+			"English":"Create New Accoun?"
+		},
+		"signupLabel_Id":
+		{
+			"Persian":"خوش آمدید",
+			"English":"Welcome"
+		},
+		"signupTitleLabel_Id":
+		{
+			"Persian":"ایجاد حساب",
+			"English":"Sign up Your Account"
+		},
+		"usernameSignupLabel_Id":
+		{
+			"Persian":"نام کاربری",
+			"English":"Username"
+		},
+		"passwordSignupLabel_Id":
+		{
+			"Persian":"رمز عبور",
+			"English":"Password"
+		},
+		"rePasswordSignupLabel_Id":
+		{
+			"Persian":"تکرار رمز عبور",
+			"English":"Re-password"
+		},
+		"emailSignupLabel_Id":
+		{
+			"Persian":"ایمیل",
+			"English":"Email"
+		},
+		"rectSignupButton_Id":
+		{
+			"Persian":"ثبت نام",
+			"English":"Sign Up"
+		},
+		"signupHaveAccountLabel_Id":
+		{
+			"Persian":"حساب کاربری دارید؟",
+			"English":"Already Have An Account?"
+		}
+			
+	}
+}

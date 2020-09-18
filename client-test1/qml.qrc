@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Contact.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>LoginSignup.qml</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>image/login.jpg</file>
+    </qresource>
+</RCC>
