@@ -14,11 +14,12 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     Client client;
-    Person person;
-    QObject::connect(&person , &Person::clientConnection , &client , std::bind(&Client::connection , &client , std::placeholders::_1));
+//    Person person;
+//    QObject::connect(&person , &Person::clientConnection , &client , std::bind(&Client::connection , &client , std::placeholders::_1));
+    client.connection("parsa");
     Configure conf;
     engine.rootContext()->setContextProperty("Client" , &client);
-    engine.rootContext()->setContextProperty("Database" , &person);
+//    engine.rootContext()->setContextProperty("Database" , &person);
     engine.rootContext()->setContextProperty("Configure" , &conf);
 
 

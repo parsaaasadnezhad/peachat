@@ -7,7 +7,7 @@ Configure::Configure(QObject *parent) : QObject(parent)
 
 void Configure::connect()
 {
-    QFile file("language.json");
+    QFile file(":/language.json");
 
     if(file.open(QIODevice::ReadOnly))
     {

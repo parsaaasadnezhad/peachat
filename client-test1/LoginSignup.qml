@@ -205,10 +205,10 @@ Item {
                         hoverEnabled: true
                         onClicked: {
                             if(loginUsernameTextField_Id.text !=="" && loginPasswordTextField_Id.text !== "")
-                                if(Database.search(loginUsernameTextField_Id.text , loginPasswordTextField_Id.text))
-                                {
+//                                if(Database.search(loginUsernameTextField_Id.text , loginPasswordTextField_Id.text))
+//                                {
                                     goContact(loginUsernameTextField_Id.text)
-                                }
+//                                }
 
 
                             loginUsernameTextField_Id.text = ""
@@ -436,7 +436,7 @@ Item {
                         hoverEnabled: true
                         onClicked: {
                             //                        if
-                            Database.insert(usernameSignupTextField_Id.text , passwordSignupTextField_Id.text)
+//                            Database.insert(usernameSignupTextField_Id.text , passwordSignupTextField_Id.text)
                             usernameSignupTextField_Id.text = ""
                             passwordSignupTextField_Id.text = ""
                             rePasswordSignupTextField_Id.text = ""
