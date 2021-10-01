@@ -2,8 +2,8 @@ import QtQuick 2.12
 import QtQuick.Controls 2.5
 
 ApplicationWindow{
-    width: 1000
-    height: 700
+    width: 400
+    height: 600
     visible: true
     title: qsTr("Hello World")
 

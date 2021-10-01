@@ -55,11 +55,11 @@ void Server::receivedData(Client *sender, const QJsonObject &object)
     {
         foreach(Client* user , users)
         {
-            //            if(user != sender)
-            //            {
-            QString data = object["text"].toString();
-            user->sendMessage(data);
-            //            }
+            if(user != sender)
+            {
+                QString data = object["text"].toString();
+                user->sendMessage(data);
+            }
         }
     }
     else if(type == "onlineUsers")

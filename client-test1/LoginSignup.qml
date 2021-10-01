@@ -99,14 +99,14 @@ Item {
                 Label{
                     id:loginWelcomLabel_Id
                     Layout.alignment: Layout.Center
-                    text: Configure.translate("main.qml","loginWelcomLabel_Id",language)
+                    text: (Configure) ? Configure.translate("main.qml","loginWelcomLabel_Id",language) : ""
                     font{pointSize: 10}
                 }
                 //2
                 Label{
                     id:loginTitleLabel_Id
                     Layout.alignment: Layout.Center
-                    text: Configure.translate("main.qml","loginTitleLabel_Id",language)
+                    text: (Configure) ? Configure.translate("main.qml","loginTitleLabel_Id",language) : null
                     font{bold: true ; pointSize: 17}
                 }
                 //3
@@ -116,7 +116,7 @@ Item {
                     height: 40
                     Label{
                         id:loginUsernameLabel_Id
-                        text: Configure.translate("main.qml","loginUsernameLabel_Id",language)
+                        text: (Configure) ? Configure.translate("main.qml","loginUsernameLabel_Id",language) : ""
                         color: "gray"
                         y:(loginUsernameTextField_Id.height - implicitHeight) / 2
                         x:0
@@ -150,7 +150,7 @@ Item {
                     echoMode: TextInput.Password
                     Label{
                         id:loginPasswordLabel_Id
-                        text: Configure.translate("main.qml","loginPasswordLabel_Id",language)
+                        text: (Configure) ? Configure.translate("main.qml","loginPasswordLabel_Id",language) : null
                         color: "gray"
                         y:(loginPasswordTextField_Id.height - implicitHeight) / 2
                         x:0
@@ -196,7 +196,7 @@ Item {
                     Label{
                         id:rectbuttonLabel_Id
                         anchors.centerIn: parent
-                        text: Configure.translate("main.qml","rectbuttonLabel_Id",language)
+                        text: (Configure) ? Configure.translate("main.qml","rectbuttonLabel_Id",language) : null
                     }
                     MouseArea{
                         id:rectButtonMouseArea_Id
@@ -205,10 +205,10 @@ Item {
                         hoverEnabled: true
                         onClicked: {
                             if(loginUsernameTextField_Id.text !=="" && loginPasswordTextField_Id.text !== "")
-//                                if(Database.search(loginUsernameTextField_Id.text , loginPasswordTextField_Id.text))
-//                                {
+                                if(Database.search(loginUsernameTextField_Id.text , loginPasswordTextField_Id.text))
+                                {
                                     goContact(loginUsernameTextField_Id.text)
-//                                }
+                                }
 
 
                             loginUsernameTextField_Id.text = ""
@@ -226,7 +226,7 @@ Item {
                 //6
                 Label{
                     id:loginCreatAccountLabel_Id
-                    text: Configure.translate("main.qml","loginCreatAccountLabel_Id",language)
+                    text: (Configure) ?  Configure.translate("main.qml","loginCreatAccountLabel_Id",language) : null
                     Layout.alignment: Layout.Center
                     font{bold: true ; pointSize: 10}
                     MouseArea{
@@ -270,13 +270,13 @@ Item {
                 Label{
                     id:signupLabel_Id
                     Layout.alignment: Layout.Center
-                    text: Configure.translate("main.qml","signupLabel_Id",language)
+                    text:(Configure) ? Configure.translate("main.qml","signupLabel_Id",language) : null
                     font{pointSize: 10}
                 }
                 //2
                 Label{
                     id:signupTitleLabel_Id
-                    text:Configure.translate("main.qml","signupTitleLabel_Id",language)
+                    text: (Configure) ? Configure.translate("main.qml","signupTitleLabel_Id",language) : null
                     font{bold: true ; pointSize: 17}
                 }
                 //3
@@ -286,7 +286,7 @@ Item {
                     height: 40
                     Label{
                         id:usernameSignupLabel_Id
-                        text: Configure.translate("main.qml","usernameSignupLabel_Id",language)
+                        text: (Configure) ? Configure.translate("main.qml","usernameSignupLabel_Id",language) : ""
                         color: "gray"
                         y:(usernameSignupTextField_Id.height - implicitHeight) / 2
                         x:0
@@ -320,7 +320,7 @@ Item {
                     echoMode: TextInput.Password
                     Label{
                         id:passwordSignupLabel_Id
-                        text: Configure.translate("main.qml","passwordSignupLabel_Id",language)
+                        text: (Configure) ? Configure.translate("main.qml","passwordSignupLabel_Id",language) : null
                         color: "gray"
                         y:(passwordSignupTextField_Id.height - implicitHeight) / 2
                         x:0
@@ -353,7 +353,7 @@ Item {
                     echoMode: TextInput.Password
                     Label{
                         id:rePasswordSignupLabel_Id
-                        text: Configure.translate("main.qml","rePasswordSignupLabel_Id",language)
+                        text:(Configure) ?  Configure.translate("main.qml","rePasswordSignupLabel_Id",language) : null
                         color: "gray"
                         y:(rePasswordSignupTextField_Id.height - implicitHeight) / 2
                         x:0
@@ -385,7 +385,7 @@ Item {
                     height: 40
                     Label{
                         id:emailSignupLabel_Id
-                        text: Configure.translate("main.qml","emailSignupLabel_Id",language)
+                        text: (Configure) ? Configure.translate("main.qml","emailSignupLabel_Id",language) : ""
                         color: "gray"
                         y:(emailSignupTextField_Id.height - implicitHeight) / 2
                         x:0
@@ -428,7 +428,7 @@ Item {
 
                     Label{
                         anchors.centerIn: parent
-                        text: Configure.translate("main.qml","rectSignupButton_Id",language)
+                        text: (Configure) ? Configure.translate("main.qml","rectSignupButton_Id",language) : ""
                     }
                     MouseArea{
                         id:rectSignupButtonMouseArea_Id
@@ -454,7 +454,7 @@ Item {
                 //6
                 Label{
                     id:signupHaveAccountLabel_Id
-                    text: Configure.translate("main.qml","signupHaveAccountLabel_Id",language)
+                    text: (Configure) ? Configure.translate("main.qml","signupHaveAccountLabel_Id",language) : ""
                     Layout.alignment: Layout.Center
                     font{bold: true ; pointSize: 10}
                     MouseArea{

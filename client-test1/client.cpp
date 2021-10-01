@@ -5,9 +5,10 @@ Client::Client(QObject *parent) : QObject(parent)
     this->socket = new QTcpSocket(this);
 }
 
-void Client::connection(QString username)
+void Client::connection(const QString &username)
 {
     _username = username;
+    qInfo() << username;
     m_onlineUser = false;
     socket->connectToHost("127.0.0.1" , 2020);
     connect(socket , &QTcpSocket::connected , this , &Client::onConnected);
@@ -128,3 +129,16 @@ QString Client::getUsername() const
     return _username;
 }
 
+
+bool Client::getIsMainUser() const
+{
+    return m_isMainUser;
+}
+
+void Client::setIsMainUser(bool newIsMainUser)
+{
+    if (m_isMainUser == newIsMainUser)
+        return;
+    m_isMainUser = newIsMainUser;
+    emit isMainUserChanged();
+}

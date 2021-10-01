@@ -5,6 +5,7 @@
         <file>qtquickcontrols2.conf</file>
         <file>LoginSignup.qml</file>
         <file>language.json</file>
+        <file>users.json</file>
     </qresource>
     <qresource prefix="/image">
         <file>image/login.jpg</file>
